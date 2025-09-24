@@ -3,8 +3,6 @@ import java.awt.*;
 
 public class Interfaz_01 extends JFrame {
 
-    // Componentes de la interfaz
-    private JPanel PanelBloc;
     private JLabel logoLabel;
     private JLabel usuarioLabel;
     private JTextField usuarioField;
@@ -21,7 +19,7 @@ public class Interfaz_01 extends JFrame {
 
     private void initializeComponents() {
         // Logo de la aplicación como imagen
-        ImageIcon originalIcon = new ImageIcon("C:\\Users\\Usuario1\\IdeaProjects\\BlocNotas\\src\\images\\FitBreak_logo.png");
+        ImageIcon originalIcon = new ImageIcon("src/images/FitBreak_logo.png");
         Image scaledImage = originalIcon.getImage().getScaledInstance(150, 150, Image.SCALE_SMOOTH);
         ImageIcon logoIcon = new ImageIcon(scaledImage);
         logoLabel = new JLabel(logoIcon, SwingConstants.CENTER);
@@ -120,7 +118,7 @@ public class Interfaz_01 extends JFrame {
         setResizable(false);
 
         // Icono de la ventana
-        Image ventanaIcon = new ImageIcon("C:\\Users\\Usuario1\\IdeaProjects\\BlocNotas\\src\\images\\FitBreak_logo.png").getImage();
+        Image ventanaIcon = new ImageIcon("src/images/FitBreak_logo.png").getImage();
         setIconImage(ventanaIcon);
 
         pack();

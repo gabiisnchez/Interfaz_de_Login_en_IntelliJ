@@ -22,7 +22,7 @@ public class Interfaz_02 extends JFrame {
 
     private void initializeComponents() {
         // Logo
-        ImageIcon originalIcon = new ImageIcon("C:\\Users\\Usuario1\\IdeaProjects\\BlocNotas\\src\\images\\FitBreak_logo.png");
+        ImageIcon originalIcon = new ImageIcon("src/images/FitBreak_logo.png");
         Image scaledImage = originalIcon.getImage().getScaledInstance(150, 150, Image.SCALE_SMOOTH);
         logoLabel = new JLabel(new ImageIcon(scaledImage), SwingConstants.CENTER);
 
@@ -131,7 +131,7 @@ public class Interfaz_02 extends JFrame {
         setResizable(false);
 
         // Icono de la ventana
-        Image ventanaIcon = new ImageIcon("C:\\Users\\Usuario1\\IdeaProjects\\BlocNotas\\src\\images\\FitBreak_logo.png").getImage();
+        Image ventanaIcon = new ImageIcon("src/images/FitBreak_logo.png").getImage();
         setIconImage(ventanaIcon);
 
         pack();
