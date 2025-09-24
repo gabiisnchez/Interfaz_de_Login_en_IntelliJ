@@ -3,7 +3,6 @@ import java.awt.*;
 
 public class Interfaz_02 extends JFrame {
 
-    private JPanel PanelBloc;
     private JLabel logoLabel;
     private JLabel usuarioLabel;
     private JTextField usuarioField;
